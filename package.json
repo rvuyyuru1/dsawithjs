@@ -10,25 +10,13 @@
   "license": "MIT",
   "scripts": {
     "buildtsc": "tsc",
-    "test": "mocha dist/tests/**/*.spec.js  --reporter spec",
-    "test_watch": "mocha dist/tests/**/*.spec.js  --reporter spec --watch",
-    "cover": "istanbul cover node_modules/mocha/bin/_mocha dist/tests/**/*.spec.js  -- -R spec",
-    "cover:nyx": "nyc npm test",
     "build": "tsup",
-    "watch": "nodemon ./dist/index.js"
+    "watch": "node --watch ./dist/index.js"
   },
   "devDependencies": {
-    "nodemon": "^2.0.19",
-    "tsup": "^6.2.3",
-    "typescript": "^4.8.3",
-    "@types/chai": "^4.3.3",
-    "@types/mocha": "^9.1.1",
-    "chai": "^4.3.6",
-    "coveralls": "^3.1.1",
-    "istanbul": "^0.4.5",
-    "mocha": "^10.0.0",
-    "nyc": "^15.1.0",
-    "tslint": "^5.20.1",
+    "tsup": "^6.5.0",
+    "typescript": "^4.9.4",
+    "tslint": "^6.1.3",
     "tslint-config-airbnb": "^5.11.2"
   }
 }
